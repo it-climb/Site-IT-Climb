@@ -1,0 +1,404 @@
+.home-main{
+  padding-top: 80px;
+  .mt30{
+    margin-top: 30px;
+  }
+  .first-headliner {
+    font-size: 100px;
+    font-family: $headersFont;
+    color: white;
+    text-align: center;
+    line-height: 76px;
+    margin: 85px auto 45px;
+    span {
+     display: block;
+    }
+  }
+  .third-headliner.orange{
+    color: #ff5f00;
+    width: 20%;
+    float: left;
+    margin-top: 24px;
+  }
+  .regular-text{
+    color: #808285;
+    font-family: $regular;
+    font-size: 16px;
+    line-height: 1.45em;
+    margin-top: 10px;
+    &.white {color: #fff}
+    &.quoter{
+      text-align: left;
+      font-size: 14px;
+      &:before{
+        content:'"';
+      }
+      &:after{
+        content:'"';
+      }
+    }
+    .up{
+      text-transform: uppercase;
+    }
+    .author{
+      color:$third-color;
+    }
+  }
+  .inner-img{
+    width: 245px;
+    height: auto;
+    display: block;
+    margin: 40px auto 20px;
+  }
+  .btn-view-all{
+    min-width: 180px;
+    margin: 30px auto;
+  }
+  .btn-view-more{
+    min-width: 310px;
+  }
+  .visit-section{
+    min-height: 750px;
+    background-size: cover;
+    text-align: center;
+    .btn-buy{
+      min-width: 293px;
+      height: 75px;
+      font-size: 26px;
+      box-shadow: 3px 3px rgba(8, 8, 8, 0.62);
+      position: relative;
+      padding: 20px 12px;
+      .btn-circle{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 22px;
+        height: 36px;
+        width: 36px;
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+    }
+    .badge-list{
+      margin: 80px auto 0;
+      padding: 0 ;
+      list-style: none;
+      overflow: hidden;
+      &.show-all{
+        .list-item{
+          left: 0;
+          &:first-child{
+            transition-delay: 300ms;
+          }
+          &:nth-child(2){
+            transition-delay: 600ms;
+          }
+          &:last-child{
+            transition-delay: 900ms;
+          }
+        }
+      }
+      .list-item{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin: 10px 20px;
+        left: 100%;
+        transition: left 350ms ease-out;
+        .tripadvisor-badge{
+            display: block;
+            color: white;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+              outline: none;
+            }
+        }
+        .fifth-headliner{
+          color: black;
+          text-transform: uppercase;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          text-align: center;
+          width: 100%;
+          font: bold 12px $regular;
+          span{
+            display: block;
+            &.year{
+              font-size: 9px;
+            }
+            &.travel{
+              font-size: 12px;
+              font-weight: 600;
+            }
+            &.choice{
+              font-size: 17px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  .news{
+    background-color: $background-grey;
+    padding: 20px;
+
+    .slider{
+      position: relative;
+      width: 70%;
+      margin: 0 0 0 25%;
+    }
+    .slick-slider {
+      margin: 0 auto;
+      width: 60%;
+      float: left;
+      .slick-list {
+        overflow: hidden;
+        .slick-slide.news{
+          display: block;
+          float: left;
+          height: 100%;
+          min-height: 1px;
+          box-sizing: border-box;
+          font-size: 15px;
+          position: relative;
+          color: darken($colorNavLinks, 20%);
+        }
+      }
+      .slick-prev, .slick-next {
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 0;
+        border: none;
+        outline: none;
+        position: absolute;
+        z-index: 99;
+        box-shadow: none;
+        top: 25px;
+        color: $colorNavLinks;
+        &:focus, &:active {
+          outline: none;
+        }
+      }
+
+      .slick-prev {
+        left: -50px;
+        &:after {
+          content: '<';
+          font-size: 30px;
+        }
+      }
+
+      .slick-next {
+        right: 50px;
+        &:before {
+          content: '>';
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .drift{
+    min-height: 150px;
+    background: url(/assets/images/ptrn_blue_map@2x.png) no-repeat center top #206BB4;
+    background-size: cover;
+    text-align: center;
+    .boat-on-water{
+      position: absolute;
+      top: 2px;
+      left: 208px;
+    }
+    .secondary-headliner{
+      position: relative;
+      margin: 20px auto;
+      font-family: $headersFont;
+      font-size: 42px;
+      color: white;
+      span{
+        display: block;
+      }
+      .inline{
+        display: inline;
+      }
+    }
+    .btn-explore-map{
+      width: 200px;
+    }
+  }
+  .picks{
+    text-align: center;
+    margin: 60px auto 120px;
+    padding-top: 0;
+  }
+  .cruise{
+    text-align: center;
+    min-height: 390px;
+    background: url(/assets/images/ptrn_light-blue@2x.png) no-repeat center top #206BB4;
+    .progress-bar-route{
+      position: relative;
+      width: 990px;
+      margin: 0 auto;
+      .boat {
+        &.discover {
+          left: 0;
+        }
+        &.showing {
+          left: 263px;
+        }
+        &.save {
+          left: 590px;
+        }
+        &.go {
+          left: 910px;
+        }
+      }
+    }
+    .wrapper{
+      min-height: 390px;
+    }
+  }
+  .schedule{
+    text-align: center;
+    margin: 40px auto 60px;
+  }
+  .customers-satisfaction{
+    background-color: $background-grey;
+    margin: 40px auto 60px;
+    padding: 70px 0;
+    text-align: center;
+  }
+  .response{
+    margin: 50px auto;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .home-main{
+    padding-top: 60px;
+    .first-headliner  {
+      font-size: 46px;
+    }
+    .inner-img {
+      margin: 15px auto 10px;
+    }
+    .visit-section{
+      min-height: 250px;
+      .btn-buy {
+        min-width: 200px;
+        height: 31px;
+        font-size: 12px;
+        position: relative;
+        padding: 6px 12px;
+        .btn-circle {
+          font-size: 10px;
+          min-height: 17px;
+          height: 17px;
+          width: 17px;
+          border: 2px solid white;
+        }
+      }
+      .badge-list {
+        margin: 50px auto 0;
+        overflow: hidden;
+        .list-item {
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          margin: 8px 5px;
+          max-width: 60px;
+          .fifth-headliner{
+            font-size: 5px;
+            top: 7px;
+            left: 14px;
+            span{
+              display: block;
+              &.year{
+                font-size: 6px;
+              }
+              &.travel{
+                font-size: 6px;
+              }
+              &.choice{
+                font-size: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .news {
+      padding: 15px;
+      .slider {
+        position: relative;
+        width: 100%;
+        margin: 0 0 0 20px;
+      }
+      .slick-slider {
+        width: 70%;
+        .slick-next {
+          right: 0;
+        }
+      }
+    }
+    .drift {
+      .secondary-headliner {
+        position: relative;
+        margin: 40px 0 0 40px;
+        font-size: 24px;
+        text-align: left;
+        span {
+          margin-left: 30px;
+        }
+      }
+      .btn-explore-map {
+        width: 50vw;
+        font-size: 12px;
+        display: block;
+        margin: 10px 0;
+      }
+      .boat-on-water {
+        position: absolute;
+        top: 0;
+        left: -40px;
+        max-width: 66px;
+      }
+    }
+    .cruise{
+      overflow: hidden;
+      .divider {
+        width: 100px;
+      }
+      .progress-bar-route {
+        padding: 140px 0 0 0;
+        overflow: hidden;
+        .boat {
+          left: 12%;
+          &.discover, &.save, &.showing, &.go {
+            left: 12%;
+          }
+        }
+      }
+    }
+    .customers-satisfaction{
+      .customer{
+        margin-top: 20px;
+      }
+    }
+    .places .list-of-places{
+      margin: 15px 0;
+      .item-place {
+        display: none;
+        img{
+          width: 100%;
+        }
+        &:nth-child(-n+2) {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

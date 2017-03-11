@@ -1,0 +1,1 @@
+export const NEWS_LOAD = 'NEWS_LOAD';

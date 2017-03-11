@@ -1,0 +1,72 @@
+.more-lauderdale{
+  padding-top: 80px;
+  .lauderdale-preheader{
+    min-height: 450px;
+    background: url(/assets/images/faq/img_FAQ_header.png) no-repeat center top #00A79D;
+    background-size: cover;
+    text-align: center;
+    .secondary-headliner {
+      font-size: 58px;
+    }
+    .fourth-headliner{
+      font: 24px $regular;
+      line-height: 1.5em;
+      color: white;
+      span{
+        display: block;
+      }
+    }
+  }
+  .places {
+    margin: 0 auto;
+  }
+  .list-of-places.second-part{
+    .item-place{
+      display: inline-block;
+      vertical-align: top;
+      width: 33.333%;
+      &:first-child{
+        width: 66.666%;
+      }
+      &:last-child{
+        width: 33.333%;
+      }
+    }
+  }
+}
+
+//mobile styles
+@media only screen and (max-width: 768px){
+  .more-lauderdale {
+    padding-top: 60px;
+    .lauderdale-preheader {
+      .secondary-headliner {
+        font-size: 42px;
+      }
+      .fourth-headliner {
+        font-size: 16px;
+      }
+        }
+        .places {
+          margin: 0 auto;
+          padding: 0;
+        }
+        .list-of-places {
+          .item-place {
+            display: inline-block;
+            vertical-align: top;
+            width: 100% !important;
+            max-height: 272px;
+            img{
+              width: 100%;
+            }
+            .wrapper {
+          min-height: 272px;
+        }
+      }
+      &.second-part {
+        display: none;
+      }
+    }
+  }
+}

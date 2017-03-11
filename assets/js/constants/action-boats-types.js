@@ -1,0 +1,1 @@
+export const BOATS_LOAD = 'BOATS_LOAD';

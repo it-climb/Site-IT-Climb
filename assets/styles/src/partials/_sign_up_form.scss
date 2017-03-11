@@ -1,0 +1,66 @@
+.signup-form-wrapper{
+  min-height: 320px;
+  background: url(/assets/images/ptrn_green@2x.png) no-repeat center top #05663B;
+  background-size: cover;
+  display: table;
+  width: 100%;
+  .inner{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .fourth-headliner{
+    text-align: center;
+    font-size: 18px;
+    font-family: $subHeaderFont;
+    color: white;
+    margin: 30px auto 50px;
+  }
+  .form-group{
+    .form-control{
+      border: 1px solid #939598;
+      border-radius: 0;
+      height: 45px;
+      font: 16px $regular;
+      padding: 12px 15px;
+    }
+  }
+  .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #808080;
+    font: 12px $regular;
+    position: absolute;
+    top: -57px;
+    z-index: 30;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px;
+    max-height: 45px;
+    width: 100%;
+    &.name{
+      top: -43px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 7px;
+      left: 50%;
+      margin-left: -7px;
+      border-bottom-width: 0;
+      border-top-color: #fff;
+      bottom: -7px;
+      position: absolute;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .signup-form-wrapper{
+    padding-bottom: 20px;
+  }
+}

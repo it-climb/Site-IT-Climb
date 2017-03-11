@@ -1,0 +1,101 @@
+.schedule{
+  padding-top: 80px;
+  .schedule-banner{
+    min-height: 450px;
+    background: url(/assets/images/shedule/img_sched_header.png) no-repeat center top #6BB0DF;
+    background-size: cover;
+    text-align: center;
+    .third-headliner {
+      font-size: 34px;
+      color: white;
+    }
+    .regular-text span {display: block}
+  }
+  .inner-text{
+    margin: 40px auto 30px;
+  }
+  .notes{
+    .note-label{
+      font: bold 14px $regular;
+      color: $fifth-color;
+      text-decoration: underline;
+      margin: 10px auto;
+    }
+    .note-text{
+      font: 14px $regular;
+      color: $border-grey;
+      margin: 0;
+      line-height: 1.3em;
+    }
+  }
+  .hollywood.schedule-table{
+    .schedule-table-header {
+      background: url(/assets/images/ptrn_red.png) no-repeat center top;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+      .fourth-headliner{
+        width: auto;
+        padding: 20px 18px 0;
+        line-height: 1.1em;
+        margin: 0;
+        span{
+          display: block;
+        }
+      }
+    }
+    .schedule-table-row{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+      .sixth-headliner {
+        padding: 35px 0 0;
+        line-height: 1.1em;
+        margin: 0;
+        width: 150px;
+        text-align: center;
+        &:first-child{
+          text-align: left;
+        }
+        &:last-child{
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+//mobile styles
+@media only screen and (max-width: 768px) {
+  .schedule{
+    padding-top: 65px;
+    .table-wrapper{
+      overflow-x: scroll;
+      .schedule-table {
+        width: 750px;
+        &.hollywood{
+          width: 1000px;
+        }
+      }
+    }
+    .hollywood.schedule-table{
+      .schedule-table-header .fourth-headliner {
+        padding: 20px 19px 0;
+        span{
+          font-size: 23px;
+        }
+      }
+      .schedule-table-row .sixth-headliner {
+        width: 125px;
+      }
+    }
+  }
+}

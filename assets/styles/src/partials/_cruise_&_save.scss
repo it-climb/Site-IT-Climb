@@ -1,0 +1,303 @@
+.cruise-and-save {
+  .cruise-and-save-title {
+    padding-top: 80px;
+    background: url(/assets/images/ptrn_blue.png) no-repeat center top #3E7CA6;
+    background-size: cover;
+    min-height: 390px;
+    position: relative;
+    z-index: 0;
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1) {
+      background-image: url('/assets/images/ptrn_blue@2x.png');
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 3),
+    only screen and (   min--moz-device-pixel-ratio: 3),
+    only screen and (     -o-min-device-pixel-ratio: 3/1) {
+      background-image: url('/assets/images/ptrn_blue@3x.png');
+    }
+  }
+  .first-headliner {
+    font: 135px $headersFont;
+    color: white;
+    margin: 25px auto 15px;
+    text-align: left;
+  }
+  .third-headliner {
+    font: 72px $headersFont;
+    color: white;
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .fifth-headliner {
+    font: 28px $subHeaderFont;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .describe-text {
+    font: 24px $regular;
+    margin: auto;
+    color: white;
+    line-height: 1.3em;
+  }
+  .divider {
+    width: 215px;
+    height: 10px;
+  }
+
+  .cruise-route {
+    margin-top: -105px;
+    text-align: center;
+    .list-ways-to-buy{
+      padding: 0;
+      text-align: center;
+      list-style: none;
+      position: relative;
+      .way{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 20%;
+        position: relative;
+        .third-headliner{
+          font: 34px $headersFont;
+          margin-top: 0px;
+          color: #000000;
+          span{
+            display: block;
+          }
+        }
+        img{
+          max-width: 152px;
+          cursor: pointer;
+        }
+        &:first-child{
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            height: 45px;
+            margin: 5px 0;
+            border-right: 1px dashed black;
+          }
+        }
+      }
+    }
+  }
+
+}
+@keyframes treasure {
+  from{
+    top: 60px;
+  }
+  50%{top: -10px}
+  to{ top: 60px;}
+}
+
+@keyframes fish{
+  0% { transform: scale(1, 1);}
+  49% { transform: scale(1, 1);}
+  50%  { transform: scale(-1, 1); }
+  100% {transform: scale(-1, 1) ;}
+}
+
+
+@keyframes fish-motion {
+  from {
+    left: -10%;
+  }
+  50% {
+    left: 70%;
+  }
+  to { left: -70%}
+}
+
+
+
+.cruise-online{
+
+  .secondary-headliner {
+    color: #000000;
+  }
+  &:before{
+    content: '';
+    display: block;
+    min-height: 65px;
+  }
+  .save-buy{
+    max-width: 80%;
+  }
+}
+
+.other-ways{
+  margin: 60px auto 0;
+  .btn-main{
+    margin-top: 20px;
+  }
+  .btn-buy{
+    width: 36%;
+  }
+  .btn-circle {
+    min-height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    color: #E6E7E8;
+    padding: 0 2px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid #f1f1f1;
+    float: right;
+  }
+  .save-box{
+    margin-top: 20px;
+    img{
+      max-width: 40px;
+      vertical-align: middle;
+    }
+    .regular-text{
+      display: inline-block;
+      vertical-align: text-top;
+      margin-left: 10px;
+    }
+  }
+  .ways{
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    .way{
+      display: inline-block;
+      vertical-align: top;
+      width: 30%;
+      img{
+        max-width: 140px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .cruise-and-save{
+    overflow: hidden;
+    .first-headliner{
+      font-size: 90px;
+    }
+    .third-headliner {
+      margin-top: 35px;
+      font-size: 50px;
+    }
+    .fifth-headliner {
+      font-size: 24px;
+      line-height: 1.33em;
+    }
+    .describe-text {
+      margin-bottom: 50px;
+    }
+    .divider {
+      width: 100px;
+    }
+    .slick-slider {
+      margin: 30px auto 50px;
+      position: relative;
+      .slick-list {
+        overflow: hidden;
+        .slick-slide.way{
+          display: block;
+          float: left;
+          height: 100%;
+          min-height: 1px;
+          box-sizing: border-box;
+          font-size: 15px;
+          position: relative;
+          &:nth-child(n+2){
+              img{
+                margin-top: 40px;
+              }
+          }
+          img{
+            max-width: 140px;
+          }
+          .third-headliner{
+            position: relative;
+            color: black;
+            &:after{
+              content: '';
+              display: block;
+              position: absolute;
+              left: 50%;
+              height: 45px;
+              margin: 5px 0;
+              border-right: 1px dashed black;
+            }
+          }
+          .description{
+            padding: 0 30px;
+            text-align: left;
+            position: relative;
+            &:before{
+              content: '';
+              display: block;
+              min-height: 60px;
+            }
+            .secondary-headliner{
+              color: black;
+              font-size: 28px;
+            }
+            img{
+              max-width: 70%;
+              display: block;
+              margin: 0 auto 10px;
+            }
+          }
+          .btn-main{
+            margin-top: 20px;
+          }
+          .btn-buy{
+            width: 90%;
+          }
+          .btn-perfect{
+            width: 90%;
+          }
+          .btn-circle {
+            min-height: 23px;
+            width: 23px;
+            border-radius: 50%;
+            color: #E6E7E8;
+            padding: 0 2px;
+            display: inline-block;
+            font-size: 14px;
+            text-align: center;
+            border: 2px solid #f1f1f1;
+            float: right;
+          }
+          .save-box{
+            margin-top: 15px;
+            img{
+              max-width: 30px;
+              vertical-align: middle;
+              display: inline-block;
+            }
+            .regular-text {
+              display: inline-block;
+              vertical-align: top;
+              margin-left: 10px;
+              width: 85%;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .slick-prev, .slick-next{
+        display:  none!important;
+      }
+    }
+
+  }
+}

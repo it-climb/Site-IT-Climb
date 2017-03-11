@@ -1,0 +1,1 @@
+export const SCHEDULES_LOAD = 'SCHEDULES_LOAD';

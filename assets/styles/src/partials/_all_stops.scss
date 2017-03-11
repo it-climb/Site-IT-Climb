@@ -1,0 +1,248 @@
+.all-stops{
+  padding-top: 80px;
+  .all-stops-preheader{
+      min-height: 450px;
+      background: url(/assets/images/stops/img_all-routes_header@2x.png) no-repeat center top #a2a2a2;
+      background-size: cover;
+      text-align: center;
+      .third-headliner {
+        font-size: 34px;
+        color: white;
+        text-transform: capitalize;
+      }
+      .divider{
+        margin-bottom: 20px;
+      }
+      .chart{
+        margin: 0 30px;
+      }
+  }
+  .preheader-info{
+    text-align: center;
+    min-height: 200px;
+  }
+
+  .clips {
+    overflow: hidden;
+    padding: 5px;
+    max-width: 80%;
+  }
+
+  .stop-container{
+    transition: all 0.3s ease-out;
+    .top{
+      padding-top: 108px;
+    }
+  }
+  .stop{
+    min-height: 80px;
+    background: url(/assets/images/ptrn_yellow.png) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 100;
+    &.yellow{
+      background: url(/assets/images/ptrn_yellow.png) no-repeat center top;
+      background-size: cover;
+    }
+    &.red{
+      background: url(/assets/images/ptrn_red.png) no-repeat center top;
+      background-size: cover;
+    }
+    &.green{
+      background: url(/assets/images/ptrn_green.png) no-repeat center top;
+      background-size: cover;
+    }
+    &.blue{
+      background: url(/assets/images/ptrn_blue.png) no-repeat center top;
+      background-size: cover;
+    }
+    .secondary-headliner{
+      display: inline-block;
+      font-size: 24px;
+      font-family: $regular;
+      font-weight: bold;
+      margin-right: 40px;
+      margin-top: 25px;
+      color: white;
+    }
+    .third-headliner{
+      display: inline-block;
+      font-size: 28px;
+      color: white;
+    }
+    .icon{
+      position: relative;
+      bottom: -30px;
+      float: left;
+      width: 80px;
+    }
+  }
+  .place{
+    margin: 25px auto 0;
+    overflow: hidden;
+    &:last-child{
+      margin: 25px auto;
+    }
+    .place-logo{
+      width: 110px;
+      height: 110px;
+      background-size: cover;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+
+    .place-activity{
+      max-width: 95px;
+      display: inline-block;
+      vertical-align: top;
+      .btn-activity {
+        min-width: 100px;
+        margin: 5px auto;
+      }
+      img{
+        display: block;
+        cursor: pointer;
+        max-height: 30px;
+        width: 20px;
+        float: left;
+        margin-right: 7px;
+        &.map{
+          max-height: 30px;
+        }
+      }
+    }
+    .place-trip-advisor{
+      width: 80%;
+      display: inline-block;
+      vertical-align: top;
+      .fourth-headliner{
+        font:bold 24px $regular;
+        color: black;
+        cursor: pointer;
+      }
+      .wealth{
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        min-width: 70%;
+        .box{
+          float: left;
+          max-width: 30px;
+          margin: 1px 5px 0px 0;
+        }
+        .fifth-headliner{
+          overflow: hidden;
+          margin-top: 10px;
+          color: $fifth-color;
+          font: 13px $headersFont;
+          line-height: 1em;
+        }
+        .discount{
+          overflow: hidden;
+          font:bold 14px $regular;
+          line-height: 1.3em;
+        }
+      }
+      .attraction{
+        display: inline-block;
+        vertical-align: top;
+        min-width: 30%;
+        margin-top: 10px;
+        .cocount{
+          max-width: 30px;
+          margin: 0 5px 0 0;
+        }
+        .fifth-headliner{
+          overflow: hidden;
+          color: $fifth-color;
+          font: 16px $headersFont;
+          display: inline-block;
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+  .lightbox{
+    height: 80vh;
+  }
+}
+
+//mobile styles
+@media only screen and (max-width: 768px) {
+  .all-stops{
+    padding-top: 60px;
+    .all-stops-preheader{
+      min-height: 250px;
+      .chart {
+        margin: 0 10px;
+        svg {
+          width: 90px;
+          height: 95px;
+          text-align: center;
+          position: relative;
+        }
+      }
+    }
+    .preheader-info {
+      .fifth-headliner{
+        margin-top: 25px;
+        font-size: 31px;
+      }
+      .regular-text{
+        margin-bottom: 25px;
+      }
+    }
+    .filter-section {
+      min-height: 58px;
+      background-color: #F1F2F2;
+      text-align: center;
+      .logo {
+        display: none;
+      }
+      .click-there {
+        display: block;
+        margin: 10px 0 0 0;
+      }
+    }
+    .stop{
+      .icon {
+        position: relative;
+        top: 0;
+        float: left;
+        width: 45px;
+        margin-right: 5px;
+      }
+    }
+    .place{
+      margin: 25px auto 0;
+      position: relative;
+      min-height: 200px;
+      overflow: hidden;
+      .place-logo {
+        width: 80px;
+        height: 80px;
+      }
+      .place-activity {
+        max-width: 54px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        top: 81px;
+        left: 15px;
+        img{
+          width: 75%;
+          margin: 6px auto;
+        }
+      }
+      .place-trip-advisor {
+        width: 75%;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "production",
+      "script": "./index.js",
+      "exec_interpreter": "node",
+      "max_memory_restart": "1G",
+      "exec_mode": "fork_mode",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "autorestart": true,
+      "log_date_format": "“YYYY-MM-DD HH:mm:ss Z”"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+.order-tickets{
+  margin: 25px auto 50px;
+  text-align: center;
+  .tickets{
+    float: left;
+    margin-right: 30px;
+  }
+  .order-form{
+    overflow: hidden;
+    margin-top: 80px;
+  }
+  .order-item{
+    text-align: left;
+    margin: 30px auto;
+    font-size: 18px;
+    font-family: $subHeaderFont;
+    .tickets-price, .adults{
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+    }
+    .tickets-price{
+      text-align: right;
+    }
+    .age{
+      color: $third-color;
+      font-family: $regular;
+    }
+    .price{
+      color: $fifth-color;
+    }
+    .status{
+      color: $fifth-color;
+      font-family: $headersFont;
+      font-size: 23px;
+    }
+    .quantity{
+      min-width: 58px;
+      height: 32px;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      border:1px solid #939598;
+      color: #939598;
+      background-color: $background-grey;
+      padding: 11px 12px;
+      font-size: 12px;
+      text-align: left;
+      position: relative;
+      .increment, .decrement{
+        height: 15px;
+        width: 24px;
+        background-color: #939598;
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        text-align: center;
+
+      }
+      .increment{
+        top: -1px;
+        right: 0;
+        &:before{
+          content: ' ';
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          margin: 4px auto;
+          border-bottom: 6px solid $background-grey;
+        }
+      }
+      .decrement{
+        bottom: 0;
+        right: 0;
+        &:before{
+          content: ' ';
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          margin: 4px auto;
+          border-top: 6px solid $background-grey;
+        }
+      }
+    }
+  }
+  .btn-buy-now{
+    min-width: 273px;
+    height: 45px;
+    margin-top: 20px;
+    font-size: 16px;
+    box-shadow: 3px 3px rgba(8, 8, 8, 0.62);
+    position: relative;
+    .btn-circle{
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      padding: 0 2px;
+      min-height: 20px;
+      width: 20px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 768px){
+  .order-tickets{
+    .tickets {
+      float: none;
+      margin: 10px auto;
+      width: 70%;
+      padding-top: 0;
+    }
+    .order-form{
+
+    }
+    .order-item{
+      .tickets-price, .adults{
+        width: 100%;
+        text-align: center !important;
+      }
+    }
+  }
+}

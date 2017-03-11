@@ -1,0 +1,65 @@
+.filter-section{
+  min-height: 100px;
+  background-color: $background-grey;
+  text-align: center;
+  .logo{
+    max-width: 160px;
+  }
+  .click-there{
+    font: bold 24px $regular;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.filters{
+  overflow: hidden;
+  height: 0;
+  transition: height 350ms ease;
+  &.show-filters{
+    height: 130px;
+  }
+  .filter-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .filter-item{
+      width: 25%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+}
+
+
+//mobile styles
+@media only screen and (max-width: 768px){
+  .filters{
+
+    &.show-filters{
+      height: 368px;
+    }
+    .filter-list{
+      margin: 0 -15px;
+      .filter-item{
+        width: 100%;
+        padding: 0 22px 0 34px;
+        &:nth-child(even){
+          background-color: $background-grey;
+        }
+        .checkbox{
+          span:after{
+            margin: 0 3px 0 0;
+            float: right;
+          }
+          input[type=checkbox]:checked + span:after{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

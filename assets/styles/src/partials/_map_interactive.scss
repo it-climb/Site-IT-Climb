@@ -1,0 +1,623 @@
+.interactive-map {
+  padding-top: 53px;
+  #google_map{
+    height: calc(100vh - 53px)!important;
+    width: 65% !important;
+    position: fixed !important;
+    right: 0;
+    top:53px;
+    z-index: 10;
+    .gm-style-iw{
+      div{
+        overflow: hidden!important;
+      }
+      .popup-info{
+        min-width: 200px;
+        .tripadvisor-info{
+          font-size: 8px;
+          img{
+            max-width: 65px;
+          }
+           a .review-count {
+            margin: 0 5px;
+          }
+        }
+        .map-icon{
+            width: 40px;
+             max-height: 70px;
+            float: left;
+            margin-right: 3%;
+        }
+        .sixth-headliner{
+          font: bold 16px $regular;
+          color: black;
+          overflow: hidden;
+        }
+        .wealth {
+          overflow: hidden;
+          .box {
+            float: left;
+            max-width: 25px;
+            margin: 1px 2px 0 0;
+          }
+          .fifth-headliner {
+            overflow: hidden;
+            margin-top: 5px;
+            color: $fifth-color;
+            font: 12px $headersFont;
+            line-height: 1em;
+          }
+          .discount {
+            overflow: hidden;
+            font: bold 10px $regular;
+            line-height: 1.3em;
+          }
+        }
+      }
+    }
+  }
+  .route-map {
+    max-height: 570px;
+  }
+  .left-nav-side{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: calc(100vh - 91px);
+    .btn-activity{
+      margin: 10px 20px;
+    }
+    .description-text{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .routes-buttons {
+    width: 35%;
+    .route .third-headliner {
+      max-width: 50%;
+    }
+  }
+  .lightbox {
+    display: block;
+    position: fixed;
+    z-index: 900;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 1);
+    top: 52px;
+    left: 0;
+    height: 100%;
+    .close {
+      margin: 20px;
+    }
+    .wrapper {
+      min-height: 661px;
+    }
+    .place{
+      margin: 25px 10px;
+      overflow: hidden;
+      .place-logo{
+        width: 110px;
+        height: 110px;
+        background-size: cover;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+      }
+
+      .place-activity{
+        .link-to-map:hover{
+          color: black;
+        }
+        img{
+          display: block;
+          cursor: pointer;
+          max-height: 30px;
+          width: 13px;
+          float: left;
+          margin-right: 7px;
+          &.map{
+              max-height: 35px;
+              margin: 15px 7px 0 0;
+              width: 30px;
+          }
+        }
+      }
+      .place-trip-advisor{
+        width: 75%;
+        display: inline-block;
+
+        vertical-align: top;
+        .fourth-headliner{
+          font:bold 24px $regular;
+          color: black;
+          cursor: pointer;
+        }
+        .tripadvisor-info{
+          margin-top: 7px;
+        }
+        .wealth{
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: top;
+          min-width: 70%;
+          .box{
+            float: left;
+            max-width: 30px;
+            margin: 1px 5px 0 0;
+          }
+          .fifth-headliner{
+            overflow: hidden;
+            margin-top: 10px;
+            color: $fifth-color;
+            font: 13px $headersFont;
+            line-height: 1em;
+          }
+          .discount{
+            overflow: hidden;
+            font:bold 14px $regular;
+            line-height: 1.3em;
+          }
+        }
+        .attraction{
+          display: inline-block;
+          vertical-align: top;
+          min-width: 30%;
+          margin-top: 10px;
+          .cocount{
+            max-width: 30px;
+            margin: 0 5px 0 0;
+          }
+          .fifth-headliner{
+            overflow: hidden;
+            color: $fifth-color;
+            font: 16px $headersFont;
+            display: inline-block;
+            vertical-align: baseline;
+          }
+        }
+      }
+    }
+    .photo-place{
+      position: relative;
+      .photos-number{
+        position: absolute;
+        z-index: 200;
+        bottom: 15px;
+        right: 20px;
+        color: white;
+        font: 16px $regular;
+      }
+    }
+    .alert{
+      min-height: 250px;
+    }
+
+    .btn-close-lightbox{
+      color: darken($border-grey, 15%) !important;
+      position: absolute;
+      z-index: 500;
+      top: 46px;
+      .fa{
+        margin: 0 10px;
+        font-size: 20px;
+      }
+    }
+    .slick-slider {
+      margin: 0;
+      padding-left: 0;
+      position: relative;
+      .slick-list {
+        overflow: hidden;
+        height: 250px;
+        .slide {
+          float: left;
+          display: block;
+          overflow: hidden;
+          height: 250px;
+          position: relative;
+          .photo-wrapper{
+            overflow: hidden;
+            background-color: #d9d9d9;
+            display: block;
+            width: 100%;
+            position: relative;
+            height: 0;
+            padding: 56.25% 0 0;
+          }
+          img {
+            position: absolute;
+            display: block;
+            max-width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100%;
+            min-height: 100px;
+          }
+        }
+      }
+      .slick-prev, .slick-next {
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 0;
+        border: none;
+        outline: none;
+        position: absolute;
+        box-shadow: none;
+        top: 50%;
+        color: grey;
+        display: block !important;
+        &:focus, &:active {
+          outline: none;
+        }
+      }
+
+      .slick-prev {
+        left: -50px;
+        &:after {
+          content: '<';
+          font-size: 30px;
+        }
+      }
+
+      .slick-next {
+        right: -50px;
+        &:before {
+          content: '>';
+          font-size: 30px;
+        }
+      }
+
+    }
+    .address {
+      margin-left: 45px;
+
+      .tel {
+        display: block;
+        color: $colorNavLinks;
+        &:hover, &:focus, &:active {
+          color: $colorNavLinks;
+          text-decoration: none;
+        }
+      }
+    }
+    .hours {
+      margin-left: 45px;
+    }
+  }
+  .slick-slider.main-slider{
+    position: relative;
+    margin: 0 auto;
+    .slick-prev, .slick-next {
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 0;
+      border: none;
+      outline: none;
+      position: absolute;
+      z-index: 99;
+      box-shadow: none;
+      top: 25px;
+      color: white;
+      display: block !important;
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+
+    .slick-prev {
+      left: 50px;
+      &:after {
+        content: '<';
+        font-size: 30px;
+      }
+    }
+
+    .slick-next {
+      right: 50px;
+      &:before {
+        content: '>';
+        font-size: 30px;
+      }
+    }
+    .single-stop{
+      float: left;
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  .filters{
+    transform: translateX(-100%);
+    transition: all .25s ease-out;
+    &.show-filters {
+      transform: translateX(0%);
+      height: 285px;
+      position: relative;
+      z-index: 200;
+      background: white;
+      width: 100%;
+    }
+    .filter-list .filter-item {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+  .filter-section {
+    min-height: 60px;
+    .logo {
+      margin-top: 10px;
+    }
+  }
+  .stop-container{
+    transition: all 0.3s ease-out;
+    &.last{
+      padding-bottom: 40px;
+    }
+    .top{
+      padding-top: 88px;
+    }
+  }
+  .stop {
+    height: 80px;
+    background: url(/assets/images/ptrn_yellow.png) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+    &.yellow{
+      background: url(/assets/images/ptrn_yellow.png) no-repeat center top;
+      background-size: cover;
+    }
+    &.red{
+      background: url(/assets/images/ptrn_red.png) no-repeat center top;
+      background-size: cover;
+    }
+    &.green{
+      background: url(/assets/images/ptrn_green.png) no-repeat center top;
+      background-size: cover;
+    }
+    &.blue{
+      background: url(/assets/images/ptrn_blue.png) no-repeat center top;
+      background-size: cover;
+    }
+    .secondary-headliner {
+      display: inline-block;
+      font-size: 24px;
+      font-family: $regular;
+      font-weight: bold;
+      margin-right: 40px;
+      margin-top: 25px;
+      color: white;
+    }
+    .third-headliner {
+      display: inline-block;
+      font-size: 28px;
+      color: white;
+    }
+    .icon {
+      position: relative;
+      bottom: -30px;
+      float: left;
+      width: 80px;
+    }
+  }
+  .slick-slider {
+    margin: 30px auto 50px;
+
+    .slick-list {
+      overflow: hidden;
+      .single-place {
+        float: left;
+      }
+    }
+  }
+  .place {
+    margin-top: 40px;
+    &:last-child{
+      margin-bottom: 40px;
+    }
+    .place-logo {
+      width: 110px;
+      height: 110px;
+      background-size: cover;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .place-activity {
+      max-width: 10%;
+      display: inline-block;
+      vertical-align: top;
+      img {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        cursor: pointer;
+        &.map {
+          margin-top: 10px;
+        }
+      }
+    }
+    .my-favorite{
+      display: inline-block;
+      float: right;
+      margin: 20px;
+      .star{
+        width: 20px;
+        cursor: pointer;
+      }
+    }
+    .place-trip-advisor {
+        width: 77%;
+        display: inline-block;
+        vertical-align: middle;
+      .fourth-headliner {
+        font: bold 24px $regular;
+        color: black;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .wealth {
+        overflow: hidden;
+        .box {
+          float: left;
+          max-width: 30px;
+          margin: 1px 5px 0px 0;
+        }
+        .fifth-headliner {
+          overflow: hidden;
+          margin-top: 15px;
+          color: $fifth-color;
+          font: 13px $headersFont;
+          line-height: 1em;
+        }
+        .discount {
+          overflow: hidden;
+          font: bold 14px $regular;
+          line-height: 1.3em;
+        }
+      }
+      .attraction {
+        .cocount {
+          max-width: 30px;
+          margin: 0 5px 0 0;
+        }
+        .fifth-headliner {
+          overflow: hidden;
+          color: $fifth-color;
+          font: 16px $headersFont;
+          display: inline-block;
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+}
+
+//mobile styles
+@media only screen and (max-width: 768px) {
+  .interactive-map {
+    padding-top: 60px;
+    #google_map{
+      height: 55vh !important;
+      width: 100% !important;
+      position: relative!important;
+      top: 0;
+    }
+
+    .filter-section {
+      min-height: 58px;
+      background-color: #F1F2F2;
+      text-align: center;
+      .logo {
+        display: none;
+      }
+      .click-there {
+        display: block;
+        margin: 10px 0 0 0;
+      }
+    }
+    .filters{
+      transform: translateY(-100%);
+      transition: transform .25s ease-out;
+      &.show-filters {
+        transform: translateY(0%);
+        height: auto;
+        position: relative;
+        z-index: 200;
+        background: transparent;
+        width: 100%;
+      }
+      .filter-list .filter-item {
+        width: 100%;
+        padding: 0 22px 0 34px;
+      }
+    }
+    .routes-buttons {
+      width: 100%;
+    }
+    .stop {
+      min-height: 70px;
+      .icon {
+        position: relative;
+        bottom: -30px;
+        float: left;
+        width: 55px;
+      }
+      .third-headliner {
+        display: block;
+        margin-left: 55px;
+      }
+    }
+    .place{
+      margin: 0;
+      .place-activity {
+        max-width: 75px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .place-trip-advisor {
+        width: 75%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .my-favorite {
+        margin: 10px;
+      }
+    }
+    .slick-slider {
+      margin: 10px auto;
+    }
+    .lightbox{
+      top: 60px;
+      width: 100vw;
+      height: auto;
+      min-height: 100%;
+      z-index: 9000;
+      position: absolute;
+      overflow: scroll;
+      .wrapper {
+        min-height: 205px;
+        .container{
+          width: 100vw;
+        }
+      }
+      .slick-slider {
+        margin:0;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+         .slick-list {
+          height: 205px;
+           .slide {
+             margin: 0;
+             height: 205px;
+           }
+        }
+
+      }
+      .address {
+        display: block;
+        max-width: 70%;
+      }
+      .hours {
+        text-align: left;
+        float: none;
+      }
+    }
+    .slick-slider.main-slider {
+      .slick-next {
+        right: 0;
+      }
+      .slick-prev {
+        left: 0;
+      }
+    }
+
+  }
+}

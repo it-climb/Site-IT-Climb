@@ -1,0 +1,1 @@
+export const STOPS_LOAD = 'STOPS_LOAD';

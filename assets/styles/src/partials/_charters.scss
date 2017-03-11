@@ -1,0 +1,51 @@
+.charters{
+  padding-top: 80px;
+  .charters-banner{
+    min-height: 450px;
+    background: url(/assets/images/charters/img_cruise-save_header.png) no-repeat center top #6BB0DF;
+    background-size: cover;
+    text-align: center;
+  }
+  .third-headliner{
+    font-size: 34px;
+    .sub{
+      font-size: 32px;
+    }
+    &.white{color: white;}
+  }
+  .contact{
+    color: $fifth-color;
+    font: bold 16px $regular;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .group-events{
+    text-align: center;
+    margin: 45px auto;
+  }
+  .boat-pdf{
+    max-width: 43px;
+  }
+  .btn-by-tickets{
+    color: $fifth-color;
+    font-weight: bold;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .perfect-picks.group-routes{
+    .route{
+      margin: 30px auto 50px;
+      text-align: center;
+      .inner-img{
+        max-width: 230px;
+        height: 200px;
+      }
+      .third-headliner{
+        margin-top:10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,355 @@
+.new-buy-ticket{
+  min-height: 70vh;
+  padding: 100px 0;
+}
+
+.tickets{
+  padding-top: 80px;
+  .first-headliner{
+    font: 42px $regular;
+    line-height: 1.25em;
+    color: white;
+    position: relative;
+    top: 40px;
+    margin: 0;
+    span{
+      display: block;
+      font: 42px $regular;
+    }
+  }
+  .secondary-headliner{
+    font-size: 32px;
+    font-family: $headersFont;
+  }
+  .third-headliner{
+    font: 24px $headersFont;
+    margin-top: 20px;
+    span{
+      display: block;
+    }
+  }
+  .fourth-headliner{
+    font: 22px $regular;
+    color: white;
+    margin-top: 7px;
+    span{
+      font-size: 34px;
+      font-family: $headersFont;
+      color: $fifth-color;
+    }
+  }
+  .fifth-headliner{
+    font: 19px $regular;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 6px;
+    display: inline-block;
+    span{
+      font:18px $regular;
+      text-transform: none;
+      color: $third-color;
+    }
+  }
+  .regular-text{
+    color: #808285;
+    font-family: $regular;
+    font-size: 16px;
+    line-height: 1.45em;
+    margin-top: 10px;
+    &.disclaimer{
+      font-size: 14px;
+      margin-bottom: 0;
+      &:before{
+        content: '*';
+      }
+    }
+    &.white {color: #fff}
+    .up{
+      text-transform: uppercase;
+    }
+  }
+  .wrapper{
+    display: table;
+    width: 100%;
+    &.about{
+      min-height: 160px;
+    }
+    .inner{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .buy-tickets{
+    min-height: 250px;
+    background: url(/assets/images/ptrn_green@2x.png) no-repeat center top #05663B;
+    background-size: cover;
+    text-align: center;
+
+  }
+  .buy-route{
+    margin-top: -90px;
+    text-align: center;
+    .list-ways-to-buy{
+      padding: 0;
+      text-align: center;
+      list-style: none;
+      position: relative;
+      .way{
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        position: relative;
+        img{
+          max-width: 152px;
+          cursor: pointer;
+        }
+        &:first-child{
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            height: 45px;
+            margin: 5px 0;
+            border-right: 1px dashed black;
+          }
+        }
+      }
+    }
+  }
+  .buy-online{
+    &:before{
+      content: '';
+      display: block;
+      min-height: 65px;
+    }
+    .save-buy{
+      max-width: 80%;
+    }
+  }
+  .checkout-table{
+    margin: 30px auto;
+    .checkout-table-header{
+      min-height: 80px;
+      background: url(/assets/images/ptrn_yellow.png) no-repeat center top;
+      background-size: cover;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .checkout-table-row{
+      min-height: 80px;
+      &:nth-child(even){
+        background-color: $background-grey;
+      }
+      .btn-learn-more{
+        font-size: 9px;
+        min-height: 27px;
+        margin: 0 15px;
+      }
+      .right-side{
+        text-align: right;
+
+        div{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .discount-price{
+          font: 18px $regular;
+          font-weight: bold;
+          color: $fifth-color;
+          margin-right: 15px;
+          span{
+            font: 23px $headersFont;
+          }
+        }
+        .regular-price{
+          min-width: 80px;
+          text-align: left;
+          font: 18px $regular;
+          font-weight: bold;
+        }
+        .quantity {
+          min-width: 34px;
+          height: 31px;
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box;
+          border: 1px solid #939598;
+          color: #939598;
+          background-color: $background-grey;
+          padding: 11px 12px;
+          margin: 0 10px;
+          font-size: 12px;
+          text-align: left;
+          position: relative;
+        }
+      }
+
+    }
+    .checkout-table-footer{
+      margin: 20px auto;
+      .terms-conditions{
+        color: #666666;
+        font: 14px $regular;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+        margin: 10px 0;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      .btn-checkout{
+        min-width: 172px;
+        float: right;
+      }
+    }
+  }
+  .other-ways{
+    .ways{
+      margin: 30px auto;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      .way{
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        img{
+          max-width: 140px;
+        }
+      }
+    }
+
+  }
+  .disclaimers{
+    margin: 30px auto;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .tickets{
+    padding-top: 60px;
+    .first-headliner{
+      font-size: 28px;
+      max-width: 80%;
+      margin: 0 auto;
+      span{
+        font-size: 28px;
+        display: inline;
+      }
+    }
+    .fourth-headliner{
+      font-size: 16px;
+      span{
+        font-size: 24px;
+      }
+    }
+    .buy-tickets{
+
+    }
+    .buy-online{
+      display: none;
+    }
+    .slick-slider {
+      margin: 30px auto 50px;
+      position: relative;
+      .slick-list {
+        overflow: hidden;
+        .slick-slide.way{
+          display: block;
+          float: left;
+          height: 100%;
+          min-height: 1px;
+          box-sizing: border-box;
+          font-size: 15px;
+          position: relative;
+          img{
+            max-width: 140px;
+          }
+          .third-headliner{
+            position: relative;
+            &:after{
+              content: '';
+              display: block;
+              position: absolute;
+              left: 50%;
+              height: 45px;
+              margin: 5px 0;
+              border-right: 1px dashed black;
+            }
+          }
+          .description{
+            padding: 0 30px;
+            text-align: left;
+            position: relative;
+            &:before{
+              content: '';
+              display: block;
+              min-height: 60px;
+            }
+            .secondary-headliner{
+              color: black;
+              font-size: 28px;
+            }
+            img{
+              max-width: 70%;
+              display: block;
+              margin: 0 auto 10px;
+            }
+          }
+        }
+      }
+      .slick-prev, .slick-next{
+        display:  none!important;
+      }
+    }
+
+    .checkout-table {
+      .checkout-table-row{
+        .left-side{
+          padding: 23px 0 0 10px;
+        }
+        .right-side{
+          padding-right: 10px;
+          .discount-price {
+            font-size: 14px;
+            span{
+              font-size: 20px;
+            }
+          }
+          .regular-price {
+            font-size: 14px;
+            margin-top: 10px;
+          }
+          .counter{
+            display: block;
+          }
+        }
+        .fifth-headliner{
+          font-size: 14px;
+          margin-top: 0;
+          line-height: 1.4em;
+          span{
+            display: block;
+            font-size: 14px;
+          }
+        }
+        .btn-learn-more {
+          margin: 5px -5px;
+        }
+      }
+      .checkout-table-footer .btn-checkout {
+        min-width: 172px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .other-ways{
+      display: none;
+    }
+  }
+}
+
